@@ -1,7 +1,7 @@
 {
-   "name": "@zavedyaid/baileys",
+   "name": "@zavedyaaid/baileys",
    "version": "1.0.0",
-   "description": "ZavedyaID Baileys v1 \u2014 restructured & rebranded fork of the itsliaaa/baileys enhanced build, with interactive messages, albums, and additional message types on top of WhiskeySockets Baileys.",
+   "description": "ZavedyaID Baileys v1 — restructured & rebranded fork of the itsliaaa/baileys enhanced build, with interactive messages, albums, and additional message types on top of WhiskeySockets Baileys.",
    "main": "core/index.js",
    "types": "core/index.d.ts",
    "type": "module",
@@ -13,7 +13,7 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/zavedyaid/baileys.git"
+      "url": "git+https://github.com/zavedyaaid/baileys.git"
    },
    "files": [
       "core/**/*",
@@ -32,7 +32,7 @@
       "whatsapp-bot",
       "whatsapp-web"
    ],
-   "homepage": "https://github.com/zavedyaid/baileys#readme",
+   "homepage": "https://github.com/zavedyaaid/baileys#readme",
    "author": "ZavedyaID",
    "license": "MIT",
    "dependencies": {
@@ -106,7 +106,15 @@
    },
    "packageManager": "yarn@4.9.2",
    "contributors": [
-      "Lia Wynn (itsliaaa) - original enhancements this fork builds on",
-      "Rajeh Taher / WhiskeySockets - original Baileys library"
-   ]
+      {
+         "name": "Lia Wynn",
+         "url": "itsliaaa"
+      },
+      {
+         "name": "Rajeh Taher / WhiskeySockets - original Baileys library"
+      }
+   ],
+   "bugs": {
+      "url": "https://github.com/zavedyaaid/baileys/issues"
+   }
 }
