@@ -18,14 +18,17 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install Yarn (jika belum ada)
-        run: npm install -g yarn
+      # ⭐ LANGKAH PENTING: Aktifkan Corepack dan siapkan Yarn 4
+      - name: Enable Corepack and setup Yarn
+        run: |
+          corepack enable
+          corepack prepare yarn@4.9.2 --activate
 
       - name: Install dependencies with Yarn
-        run: yarn install --frozen-lockfile   # pakai lockfile biar konsisten
+        run: yarn install --frozen-lockfile
 
       - name: Build TypeScript
-        run: yarn build                       # atau npm run build, tapi lebih aman yarn
+        run: yarn build
 
       - name: Publish to npm
         run: npm publish --access public
