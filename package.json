@@ -1,5 +1,5 @@
 {
-  "name": "@ZavedyaID/baileys",
+  "name": "@zavedyaid/baileys",
   "version": "1.0.1",
   "description": "ZavedyaID Baileys v1 — restructured & rebranded fork of the itsliaaa/baileys enhanced build, with interactive messages, albums, and additional message types on top of WhiskeySockets Baileys.",
   "main": "core/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZavedyaID/baileys.git"
+    "url": "git+https://github.com/zavedyaid/baileys.git"
   },
   "files": [
     "core/**/*",
@@ -33,7 +33,7 @@
     "whatsapp-bot",
     "whatsapp-web"
   ],
-  "homepage": "https://github.com/ZavedyaID/baileys#readme",
+  "homepage": "https://github.com/zavedyaid/baileys#readme",
   "author": "ZavedyaID",
   "license": "MIT",
   "dependencies": {
@@ -119,6 +119,6 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/ZavedyaID/baileys/issues"
+    "url": "https://github.com/zavedyaid/baileys/issues"
   }
 }
