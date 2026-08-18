@@ -1,4 +1,4 @@
-# 🌱 @zavedyaaid/baileys — v1.0.0
+# 🌱 @zavedyaaid/baileys — v1.0.1
 
 [![Logo](https://files.catbox.moe/c5s9g0.jpg)](https://www.npmjs.com/package/@zavedyaaid/baileys)
 
