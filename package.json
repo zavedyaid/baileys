@@ -1,6 +1,6 @@
 {
    "name": "@zavedyaaid/baileys",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "ZavedyaID Baileys v1 — restructured & rebranded fork of the itsliaaa/baileys enhanced build, with interactive messages, albums, and additional message types on top of WhiskeySockets Baileys.",
    "main": "core/index.js",
    "types": "core/index.d.ts",
