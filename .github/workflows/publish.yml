@@ -1,8 +1,9 @@
 name: Publish to npm
 
 on:
+  workflow_dispatch:
   release:
-    types: [published]  # Otomatis jalan ketika kamu publish release di GitHub
+    types: [published]
 
 jobs:
   publish:
@@ -17,11 +18,14 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install Yarn (jika belum ada)
+        run: npm install -g yarn
+
+      - name: Install dependencies with Yarn
+        run: yarn install --frozen-lockfile   # pakai lockfile biar konsisten
 
       - name: Build TypeScript
-        run: npm run build  # Pastikan script "build" ada di package.json
+        run: yarn build                       # atau npm run build, tapi lebih aman yarn
 
       - name: Publish to npm
         run: npm publish --access public
