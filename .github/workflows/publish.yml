@@ -26,7 +26,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --no-immutable
 
-      # ⬇️ STEP BUILD DIHAPUS KARENA GA ADA SCRIPT NYA
+      - name: Build TypeScript
+        run: yarn build
 
       - name: Publish to npm
         run: npm publish --access public
