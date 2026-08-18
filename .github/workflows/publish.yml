@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'   # biar gak deprecation warning
           registry-url: 'https://registry.npmjs.org'
 
       - name: Enable Corepack & Setup Yarn
@@ -24,7 +24,7 @@ jobs:
           corepack prepare yarn@4.9.2 --activate
 
       - name: Install dependencies
-        run: yarn install   # ⬅️ INI YANG DIUBAH
+        run: yarn install --no-immutable   # ⬅️ INI KUNCI NYA
 
       - name: Build TypeScript
         run: yarn build
